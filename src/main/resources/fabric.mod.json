@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "warden-drops",
+	"version": "${version}",
+	"name": "Warden Drops",
+	"description": "Makes the warden fight rewarding.",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/warden-drops",
+		"sources": "https://github.com/herrobriam/warden-drops"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/warden-drops/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.wardendrops.WardenDrops"
+		],
+		"fabric-datagen": [
+			"net.herrobriam.wardendrops.WardenDropsDataGenerator"
+		]
+	},
+	"mixins": [
+		"warden-drops.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
